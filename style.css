@@ -1,12 +1,12 @@
 :root {
   --vermelho: #ce0000;
   --vinho: #910000;
-  --verde: #42d392;
+  --amarelo:#f1f506;
   --cinza: #f5f5f5;
   --preto: #222;
   --branco: #fff;
-  --degrade-primario: linear-gradient(135deg, #3a7bd5, #8364e8);
-  --degrade-secundario: linear-gradient(135deg, #42d392, #3a7bd5);
+  --degrade-primario: linear-gradient(135deg, #ce0000, #d30000);
+  --degrade-secundario: linear-gradient(135deg, #fdff87, #ce0000);
 }
 
 * {
@@ -54,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-  background: var(--verde);
+  background: var(--amarelo);
   color: var(--preto);
   transform: rotate(-3deg) scale(1.05);
 }
@@ -199,7 +199,7 @@ section h2 {
   content: "●";
   position: absolute;
   left: -2px;
-  color: var(--verde);
+  color: var(--amarelo);
   font-size: 1.2rem;
 }
 
