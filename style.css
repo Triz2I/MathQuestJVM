@@ -1,6 +1,6 @@
 :root {
-  --azul: #3a7bd5;
-  --lilas: #8364e8;
+  --vermelho: #ce0000;
+  --vinho: #910000;
   --verde: #42d392;
   --cinza: #f5f5f5;
   --preto: #222;
@@ -24,7 +24,7 @@ body {
 
 /* ================= HEADER ================= */
 header {
-  background: var(--azul);
+  background: var(--vermelho);
   color: var(--branco);
   padding: 1rem 2rem;
   display: flex;
@@ -109,7 +109,7 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--azul);
+  color: var(--vermelho);
   text-align: center;
 }
 
@@ -162,7 +162,7 @@ section h2 {
   padding: 1.5rem;
   border-radius: 14px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  border-top: 5px solid var(--azul);
+  border-top: 5px solid var(--vermelho);
   transition: 0.3s;
 }
 
@@ -229,7 +229,7 @@ th {
 
 /* ================= FOOTER ================= */
 footer {
-  background: var(--azul);
+  background: var(--vermelho);
   color: var(--branco);
   text-align: center;
   padding: 1.5rem;
