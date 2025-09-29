@@ -104,72 +104,58 @@ nav a:hover {
 /* ================= SEÇÕES ================= */
 section {
   padding: 3rem 2rem;
+  transition: background 0.5s ease;
 }
 
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--vermelho);
-  text-align: center;
+#labmat:hover {
+  background: linear-gradient(135deg, #ffe0e0, #ff9999);
 }
 
-/* 🎨 Destaques por setor */
-#labmat {
-  background: linear-gradient(135deg, #f9f9ff, #f78585);
+#professores:hover {
+  background: linear-gradient(135deg, #ffdada, #ff8080);
 }
 
-#professores {
-  background: linear-gradient(135deg, #f2fff8, #ff4a4a);
+#vestibulares:hover {
+  background: linear-gradient(135deg, #ffb3b3, #ff0000);
 }
 
-#vestibulares {
-  background: linear-gradient(135deg, #fff9f0, #fc4141);
+#conceitos:hover {
+  background: linear-gradient(135deg, #ffdada, #cc0000);
 }
 
-#conceitos {
-  background: linear-gradient(135deg, #f0f9ff, #ff2727);
+#exercicios:hover {
+  background: linear-gradient(135deg, #ffecec, #990000);
 }
 
-#exercicios {
-  background: linear-gradient(135deg, #fff5f8, #ff1b1b);
+#historia:hover {
+  background: linear-gradient(135deg, #ffcccc, #880000);
 }
 
-#historia {
-  background: linear-gradient(135deg, #f8f8f8, #fa0202);
+#curiosidades:hover {
+  background: linear-gradient(135deg, #ffd6d6, #b30000);
 }
 
-#curiosidades {
-  background: linear-gradient(135deg, #f9f0ff, #ebd6ff);
+#quiz:hover {
+  background: linear-gradient(135deg, #ffecec, #ff3333);
 }
 
-#quiz {
-  background: linear-gradient(135deg, #f0fff9, #ccffe5);
-}
-
-#sobre {
-  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+#sobre:hover {
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
 }
 
 /* ================= CARDS ================= */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
 .card {
-  background: var(--branco);
-  padding: 1.5rem;
-  border-radius: 14px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   border-top: 5px solid var(--vermelho);
-  transition: 0.3s;
+  background: var(--branco);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
 }
 
 .card:hover {
+  box-shadow: 0 6px 16px rgba(206,0,0,0.3);
   transform: translateY(-8px) rotate(-1deg);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+  background: linear-gradient(135deg, #fff0f0, #ffe0e0);
 }
+
 
 /* ================= TIMELINE ================= */
 #historia ul {
