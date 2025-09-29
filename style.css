@@ -115,27 +115,27 @@ section h2 {
 
 /* 🎨 Destaques por setor */
 #labmat {
-  background: linear-gradient(135deg, #f9f9ff, #e8f0ff);
+  background: linear-gradient(135deg, #f9f9ff, #f78585);
 }
 
 #professores {
-  background: linear-gradient(135deg, #f2fff8, #d6f5e5);
+  background: linear-gradient(135deg, #f2fff8, #ff4a4a);
 }
 
 #vestibulares {
-  background: linear-gradient(135deg, #fff9f0, #ffe5cc);
+  background: linear-gradient(135deg, #fff9f0, #fc4141);
 }
 
 #conceitos {
-  background: linear-gradient(135deg, #f0f9ff, #e0f2ff);
+  background: linear-gradient(135deg, #f0f9ff, #ff2727);
 }
 
 #exercicios {
-  background: linear-gradient(135deg, #fff5f8, #ffd6e0);
+  background: linear-gradient(135deg, #fff5f8, #ff1b1b);
 }
 
 #historia {
-  background: linear-gradient(135deg, #f8f8f8, #e6e6e6);
+  background: linear-gradient(135deg, #f8f8f8, #fa0202);
 }
 
 #curiosidades {
