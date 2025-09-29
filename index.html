@@ -1,1 +1,112 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathQuestJVM - Matemática em Questões</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>📊 MathQuestJVM</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#labmat">LabMat</a></li>
+        <li><a href="#professores">Professores</a></li>
+        <li><a href="#vestibulares">Vestibulares</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Principal -->
+  <section class="banner">
+    <h2>Matemática de forma visual e interativa</h2>
+    <p>Explore gráficos, simulações e experimentos visuais em tempo real.</p>
+    <canvas id="graficoFuncao"></canvas>
+    <div class="sliders">
+      <label for="a">a:</label>
+      <input type="range" id="a" min="-3" max="3" step="0.1" value="1">
+      <label for="b">b:</label>
+      <input type="range" id="b" min="-5" max="5" step="0.1" value="0">
+      <label for="c">c:</label>
+      <input type="range" id="c" min="-10" max="10" step="1" value="0">
+    </div>
+  </section>
+
+  <!-- LabMat -->
+  <section id="labmat">
+    <h2>🧪 Laboratório Visual de Matemática</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Construtor de Figuras</h3>
+        <p>Desenhe triângulos, retângulos e círculos e veja medidas mudarem em tempo real.</p>
+      </div>
+      <div class="card">
+        <h3>Manipulador de Funções</h3>
+        <p>Compare funções e visualize transformações nos gráficos.</p>
+      </div>
+      <div class="card">
+        <h3>Visualizador de Proporções</h3>
+        <p>Explore frações, razões e porcentagens com blocos visuais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para Professores -->
+  <section id="professores">
+    <h2>👩‍🏫 Para Professores</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Banco de Questões</h3>
+        <p>Acesse exercícios organizados por série e tema.</p>
+      </div>
+      <div class="card">
+        <h3>Gerador de Provas</h3>
+        <p>Monte avaliações com gráficos automáticos integrados.</p>
+      </div>
+      <div class="card">
+        <h3>Aulas Interativas</h3>
+        <p>Projete simuladores e experimente o “modo aula ao vivo”.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vestibulares -->
+  <section id="vestibulares">
+    <h2>🗓️ Calendário de Vestibulares</h2>
+    <p>Fique por dentro das datas dos principais vestibulares do Brasil.</p>
+    <table>
+      <tr>
+        <th>Vestibular</th><th>Inscrição</th><th>Prova</th><th>Resultado</th><th>Link Oficial</th>
+      </tr>
+      <tr>
+        <td>ENEM</td><td>27/05 a 07/06</td><td>03 e 10/11</td><td>10/01/2025</td>
+        <td><a href="https://enem.inep.gov.br" target="_blank">enem.inep.gov.br</a></td>
+      </tr>
+      <tr>
+        <td>Fuvest (USP)</td><td>12/08 a 20/09</td><td>17/11</td><td>27/01/2025</td>
+        <td><a href="https://fuvest.br" target="_blank">fuvest.br</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>ℹ️ Sobre o Projeto</h2>
+    <p>O MathQuestJVM busca transformar a matemática em algo visual, explorável e intuitivo — tanto para alunos quanto para professores.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 MathQuestJVM - Desenvolvido para inspirar o aprendizado de matemática</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
