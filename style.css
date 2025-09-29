@@ -1,1 +1,145 @@
+:root {
+  --azul: #3a7bd5;
+  --lilas: #8364e8;
+  --verde: #42d392;
+  --cinza: #f5f5f5;
+  --preto: #222;
+  --branco: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--cinza);
+  color: var(--preto);
+}
+
+header {
+  background: var(--azul);
+  color: var(--branco);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--branco);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: var(--verde);
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--azul), var(--lilas));
+  color: var(--branco);
+  text-align: center;
+}
+
+.banner canvas {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: var(--branco);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.sliders {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sliders label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--azul);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--branco);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: var(--azul);
+  color: var(--branco);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: var(--branco);
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+th {
+  background: var(--lilas);
+  color: var(--branco);
+}
+
+td a {
+  color: var(--azul);
+  text-decoration: underline;
+}
 
