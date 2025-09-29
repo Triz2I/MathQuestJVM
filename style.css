@@ -5,6 +5,8 @@
   --cinza: #f5f5f5;
   --preto: #222;
   --branco: #fff;
+  --degrade-primario: linear-gradient(135deg, #3a7bd5, #8364e8);
+  --degrade-secundario: linear-gradient(135deg, #42d392, #3a7bd5);
 }
 
 * {
@@ -17,8 +19,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: var(--cinza);
   color: var(--preto);
+  line-height: 1.6;
 }
 
+/* ================= HEADER ================= */
 header {
   background: var(--azul);
   color: var(--branco);
@@ -26,10 +30,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 800;
 }
 
@@ -44,20 +49,32 @@ nav a {
   color: var(--branco);
   font-weight: 600;
   transition: 0.3s;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
 }
 
 nav a:hover {
-  color: var(--verde);
+  background: var(--verde);
+  color: var(--preto);
+  transform: rotate(-3deg) scale(1.05);
 }
 
+/* ================= BANNER ================= */
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
-  background: linear-gradient(135deg, var(--azul), var(--lilas));
+  padding: 3rem 2rem;
+  background: var(--degrade-primario);
   color: var(--branco);
   text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.banner h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .banner canvas {
@@ -66,8 +83,10 @@ nav a:hover {
   background: var(--branco);
   border-radius: 12px;
   padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Sliders */
 .sliders {
   display: flex;
   gap: 1rem;
@@ -79,8 +98,10 @@ nav a:hover {
 .sliders label {
   font-weight: 600;
   margin-right: 0.5rem;
+  color: var(--branco);
 }
 
+/* ================= SEÇÕES ================= */
 section {
   padding: 3rem 2rem;
 }
@@ -89,6 +110,7 @@ section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--azul);
+  text-align: center;
 }
 
 .cards {
@@ -100,46 +122,81 @@ section h2 {
 .card {
   background: var(--branco);
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  border-top: 5px solid var(--azul);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px) rotate(-1deg);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
+/* ================= TIMELINE ================= */
+#historia ul {
+  list-style: none;
+  position: relative;
+  padding-left: 2rem;
+}
+
+#historia ul::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--degrade-secundario);
+  border-radius: 2px;
+}
+
+#historia li {
+  margin: 1rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+#historia li::before {
+  content: "●";
+  position: absolute;
+  left: -2px;
+  color: var(--verde);
+  font-size: 1.2rem;
+}
+
+/* ================= TABLE ================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: var(--branco);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 0.9rem;
+  text-align: center;
+}
+
+th {
+  background: var(--degrade-primario);
+  color: var(--branco);
+}
+
+/* ================= FOOTER ================= */
 footer {
   background: var(--azul);
   color: var(--branco);
   text-align: center;
   padding: 1.5rem;
   margin-top: 2rem;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-  background: var(--branco);
-}
-
-table, th, td {
-  border: 1px solid #ccc;
-}
-
-th, td {
-  padding: 0.8rem;
-  text-align: center;
-}
-
-th {
-  background: var(--lilas);
-  color: var(--branco);
-}
-
-td a {
-  color: var(--azul);
-  text-decoration: underline;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 

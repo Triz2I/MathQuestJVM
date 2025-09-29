@@ -12,6 +12,10 @@ function gerarDados(a, b, c) {
   });
 }
 
+let gradient = ctx.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(66,211,146,0.5)');
+gradient.addColorStop(1, 'rgba(58,123,213,0.1)');
+
 let chart = new Chart(ctx, {
   type: 'line',
   data: {
@@ -19,14 +23,20 @@ let chart = new Chart(ctx, {
       label: 'y = ax² + bx + c',
       data: gerarDados(a, b, c),
       borderColor: '#42d392',
-      backgroundColor: 'rgba(66,211,146,0.3)',
+      backgroundColor: gradient,
       fill: true,
-      tension: 0.3
+      tension: 0.4,
+      pointRadius: 0
     }]
   },
   options: {
     responsive: true,
-    plugins: { legend: { display: true } },
+    plugins: {
+      legend: {
+        display: true,
+        labels: { color: "#222" }
+      }
+    },
     scales: {
       x: { type: 'linear', position: 'bottom' },
       y: { beginAtZero: true }
@@ -45,33 +55,3 @@ let chart = new Chart(ctx, {
     chart.update();
   });
 });
-
-// =====================
-// NOVOS INTERATIVOS
-// =====================
-
-// Exercício rápido
-function verificarResposta() {
-  const resposta = document.getElementById("resposta1").value;
-  const feedback = document.getElementById("feedback1");
-  if (resposta == 56) {
-    feedback.textContent = "✅ Correto!";
-    feedback.style.color = "green";
-  } else {
-    feedback.textContent = "❌ Tente novamente.";
-    feedback.style.color = "red";
-  }
-}
-
-// Quiz vestibular
-function verificarQuiz() {
-  const resposta = document.getElementById("respostaQuiz").value;
-  const feedback = document.getElementById("feedbackQuiz");
-  if (resposta == 12) {
-    feedback.textContent = "✅ Arrasou! √144 = 12.";
-    feedback.style.color = "green";
-  } else {
-    feedback.textContent = "❌ Resposta incorreta. Tente novamente.";
-    feedback.style.color = "red";
-  }
-}
