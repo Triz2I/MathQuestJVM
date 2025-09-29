@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -19,6 +18,11 @@
         <li><a href="#labmat">LabMat</a></li>
         <li><a href="#professores">Professores</a></li>
         <li><a href="#vestibulares">Vestibulares</a></li>
+        <li><a href="#conceitos">Conceitos</a></li>
+        <li><a href="#exercicios">Exercícios</a></li>
+        <li><a href="#historia">História</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li><a href="#quiz">Quiz</a></li>
         <li><a href="#sobre">Sobre</a></li>
       </ul>
     </nav>
@@ -94,6 +98,80 @@
         <td><a href="https://fuvest.br" target="_blank">fuvest.br</a></td>
       </tr>
     </table>
+  </section>
+
+  <!-- NOVAS SEÇÕES -->
+
+  <!-- Conceitos Fundamentais -->
+  <section id="conceitos">
+    <h2>📘 Conceitos Fundamentais</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Funções</h3>
+        <p>Uma função relaciona cada valor de entrada (x) a um único valor de saída (y). Exemplo: f(x) = 2x + 3.</p>
+      </div>
+      <div class="card">
+        <h3>Geometria</h3>
+        <p>Estudo das formas, ângulos, áreas e volumes. Triângulo retângulo segue o Teorema de Pitágoras: a²+b²=c².</p>
+      </div>
+      <div class="card">
+        <h3>Estatística</h3>
+        <p>Média, mediana e desvio padrão ajudam a entender dados do mundo real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercícios Interativos -->
+  <section id="exercicios">
+    <h2>📝 Exercícios Rápidos</h2>
+    <p>Resolva e confira a resposta automaticamente!</p>
+    <div class="card">
+      <p><strong>Exemplo:</strong> Quanto é 7 × 8 ?</p>
+      <input type="number" id="resposta1" placeholder="Digite sua resposta">
+      <button onclick="verificarResposta()">Verificar</button>
+      <p id="feedback1"></p>
+    </div>
+  </section>
+
+  <!-- Linha do Tempo -->
+  <section id="historia">
+    <h2>📜 História da Matemática</h2>
+    <ul>
+      <li><strong>3000 a.C.</strong> – Babilônios desenvolvem sistemas numéricos.</li>
+      <li><strong>300 a.C.</strong> – Euclides publica "Os Elementos".</li>
+      <li><strong>1600</strong> – Descartes cria a Geometria Analítica.</li>
+      <li><strong>1900+</strong> – Teoria dos conjuntos e matemática moderna.</li>
+    </ul>
+  </section>
+
+  <!-- Curiosidades -->
+  <section id="curiosidades">
+    <h2>✨ Curiosidades e Aplicações</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Fibonacci</h3>
+        <p>A sequência de Fibonacci aparece na natureza: flores, conchas e até na galáxia.</p>
+      </div>
+      <div class="card">
+        <h3>Criptografia</h3>
+        <p>Senhas e transações bancárias usam matemática avançada para segurança digital.</p>
+      </div>
+      <div class="card">
+        <h3>Probabilidade</h3>
+        <p>Jogos, loterias e até previsões de tempo usam conceitos de probabilidade.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz">
+    <h2>🎯 Quiz de Vestibular</h2>
+    <div class="card">
+      <p id="perguntaQuiz">Pergunta: Qual é a raiz quadrada de 144?</p>
+      <input type="number" id="respostaQuiz" placeholder="Sua resposta">
+      <button onclick="verificarQuiz()">Responder</button>
+      <p id="feedbackQuiz"></p>
+    </div>
   </section>
 
   <!-- Sobre -->

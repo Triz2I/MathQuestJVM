@@ -46,3 +46,32 @@ let chart = new Chart(ctx, {
   });
 });
 
+// =====================
+// NOVOS INTERATIVOS
+// =====================
+
+// Exercício rápido
+function verificarResposta() {
+  const resposta = document.getElementById("resposta1").value;
+  const feedback = document.getElementById("feedback1");
+  if (resposta == 56) {
+    feedback.textContent = "✅ Correto!";
+    feedback.style.color = "green";
+  } else {
+    feedback.textContent = "❌ Tente novamente.";
+    feedback.style.color = "red";
+  }
+}
+
+// Quiz vestibular
+function verificarQuiz() {
+  const resposta = document.getElementById("respostaQuiz").value;
+  const feedback = document.getElementById("feedbackQuiz");
+  if (resposta == 12) {
+    feedback.textContent = "✅ Arrasou! √144 = 12.";
+    feedback.style.color = "green";
+  } else {
+    feedback.textContent = "❌ Resposta incorreta. Tente novamente.";
+    feedback.style.color = "red";
+  }
+}
