@@ -113,6 +113,44 @@ section h2 {
   text-align: center;
 }
 
+/* 🎨 Destaques por setor */
+#labmat {
+  background: linear-gradient(135deg, #f9f9ff, #e8f0ff);
+}
+
+#professores {
+  background: linear-gradient(135deg, #f2fff8, #d6f5e5);
+}
+
+#vestibulares {
+  background: linear-gradient(135deg, #fff9f0, #ffe5cc);
+}
+
+#conceitos {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2ff);
+}
+
+#exercicios {
+  background: linear-gradient(135deg, #fff5f8, #ffd6e0);
+}
+
+#historia {
+  background: linear-gradient(135deg, #f8f8f8, #e6e6e6);
+}
+
+#curiosidades {
+  background: linear-gradient(135deg, #f9f0ff, #ebd6ff);
+}
+
+#quiz {
+  background: linear-gradient(135deg, #f0fff9, #ccffe5);
+}
+
+#sobre {
+  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+}
+
+/* ================= CARDS ================= */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -199,4 +237,3 @@ footer {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-
