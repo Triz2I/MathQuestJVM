@@ -22,7 +22,7 @@ body {
   line-height: 1.6;
 }
 
-/* ================= HEADER ================= */
+/* cabeça do ste*/
 header {
   background: var(--vermelho);
   color: var(--branco);
@@ -59,7 +59,7 @@ nav a:hover {
   transform: rotate(-3deg) scale(1.05);
 }
 
-/* ================= BANNER ================= */
+/*================= BANNER ================= */
 .banner {
   display: flex;
   flex-direction: column;
