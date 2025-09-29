@@ -6,7 +6,7 @@
   --preto: #222;
   --branco: #fff;
   --degrade-primario: linear-gradient(135deg, #ce0000, #4e0000);
-  --degrade-secundario: linear-gradient(135deg, #fdff87, #ce0000);
+  --degrade-secundario: linear-gradient(135deg, #fdff87, #5f0101);
 }
 
 * {
